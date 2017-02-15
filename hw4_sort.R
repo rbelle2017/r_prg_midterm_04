@@ -1,5 +1,5 @@
 my_sort <- function(input_vector,decreasing=FALSE){
-  vector_len=length(input_vector)
+  vector_len <- length(input_vector)
   is_exchange <- FALSE
   
   for (i in 1:(vector_len-1)){
@@ -20,6 +20,6 @@ my_sort <- function(input_vector,decreasing=FALSE){
 }
 
 set.seed(87)
-test_vec=ceiling(runif(10)*100)
+test_vec <- ceiling(runif(10)*100)
 my_sort(test_vec)
 my_sort(test_vec,decreasing = TRUE)
