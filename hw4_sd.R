@@ -11,7 +11,7 @@ my_sd <- function(input_vector){
   for (i in input_vector){
     sd_sum <- sd_sum + (i - average_value)^2
   }
-  sd_value = (sd_sum/(vector_len - 1))^0.5
+  sd_value <- (sd_sum/(vector_len - 1))^0.5
   return(sd_value)
 }
 
